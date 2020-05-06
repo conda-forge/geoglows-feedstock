@@ -1,5 +1,5 @@
 {% set name = "geoglows" %}
-{% set version = "0.15.1" %}
+{% set version = "0.16" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 47ecbfa5c6e8e66cb182e54c4562936554bcb2abaaf6372f0e0e92fa3b58d788
+  sha256: 618749eb28656a8a4724cb1d574d1effb0a29f905581dee675041947ef504b51
 
 build:
   number: 0
