@@ -1,5 +1,5 @@
 {% set name = "geoglows" %}
-{% set version = "0.19" %}
+{% set version = "0.20" %}
 
 package:
   name: {{ name|lower }}
