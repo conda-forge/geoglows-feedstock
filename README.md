@@ -1,7 +1,7 @@
 About geoglows
 ==============
 
-Home: https://github.com/rileyhales/geoglows
+Home: https://github.com/BYU-Hydroinformatics/geoglows
 
 Package license: BSD-3-Clause
 
