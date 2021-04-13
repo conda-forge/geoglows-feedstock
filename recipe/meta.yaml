@@ -1,5 +1,5 @@
 {% set name = "geoglows" %}
-{% set version = "0.21.1" %}
+{% set version = "0.23" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ff53d3a34fe08c0f06cbf80d5bbdd66553f53d3889e419799b5bf7607063b741
+  sha256: 723e64b7d402fb3874640fc509a3f49825bb5471cdc922b579bf2fba2e6f8567
 
 build:
   number: 0
@@ -16,9 +16,10 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
+    - python >=3.6
     - requests
     - pandas
     - plotly >=4.6
