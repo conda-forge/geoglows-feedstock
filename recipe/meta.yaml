@@ -10,7 +10,7 @@ source:
   sha256: 95fe28ebc1a61553ac781a83a3ce03331bf6824ff341142c5cf3d6227b99785e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -36,7 +36,7 @@ test:
 
 about:
   home: https://github.com/BYU-Hydroinformatics/geoglows
-  summary: A tool for retrieving Streamflow from the GEOGloWS ECMWF Streamflow service developed by Riley Hales as part of a Master's Thesis in Civil and Environmental Engineering at Brigham Young University
+  summary: A tool for retrieving Streamflow from the GEOGloWS ECMWF Streamflow Service
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
