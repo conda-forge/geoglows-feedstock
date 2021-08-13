@@ -7,7 +7,7 @@ Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geoglows-feedstock/blob/master/LICENSE.txt)
 
-Summary: A tool for retrieving Streamflow from the GEOGloWS ECMWF Streamflow service developed by Riley Hales as part of a Master's Thesis in Civil and Environmental Engineering at Brigham Young University
+Summary: A tool for retrieving Streamflow from the GEOGloWS ECMWF Streamflow Service
 
 Documentation: https://geoglows.readthedocs.io
 
