@@ -7,7 +7,7 @@ Home: https://github.com/BYU-Hydroinformatics/geoglows
 
 Package license: BSD-3-Clause
 
-Summary: A tool for retrieving Streamflow from the GEOGloWS ECMWF Streamflow Service
+Summary: A tool for retrieving modeled river discharge from the GEOGLOWS data service
 
 Documentation: https://geoglows.readthedocs.io
 
@@ -145,6 +145,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@rfun](https://github.com/rfun/)
+* [@msouff](https://github.com/msouff/)
 * [@rileyhales](https://github.com/rileyhales/)
 
