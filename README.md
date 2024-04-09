@@ -3,7 +3,7 @@ About geoglows-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geoglows-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/BYU-Hydroinformatics/geoglows
+Home: https://github.com/geoglows/pygeoglows
 
 Package license: BSD-3-Clause
 
