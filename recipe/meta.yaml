@@ -1,5 +1,5 @@
 {% set name = "geoglows" %}
-{% set version = "0.27.1" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ac7ac85cc74ea133e1f777944b0ccc32103b6e3746b837e62138c7ffca148cb0
+  sha256: bdf32e42a76fc3e7602dca83818e1b0ef726b51fcc7a0f00c390e219b38b0a49
 
 build:
   number: 0
@@ -22,13 +22,16 @@ requirements:
     - python >=3.6
     - requests
     - pandas
-    - plotly >=4.6
-    - jinja2
-    - shapely
+    - plotly >=5
     - scipy
     - numpy
     - hydrostats
     - HydroErr
+    - s3fs
+    - xarray
+    - zarr
+    - fastparquet
+    - dask
 
 test:
   imports:
@@ -36,7 +39,7 @@ test:
 
 about:
   home: https://github.com/BYU-Hydroinformatics/geoglows
-  summary: A tool for retrieving Streamflow from the GEOGloWS ECMWF Streamflow Service
+  summary: A tool for retrieving modeled river discharge from the GEOGLOWS data service
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
@@ -45,4 +48,4 @@ about:
 extra:
   recipe-maintainers:
     - rileyhales
-    - rfun
+    - msouff
