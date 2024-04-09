@@ -1,5 +1,5 @@
 {% set name = "geoglows" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6f134cdbefc42b1ce8ce69e84a01cdf13b2957c05a05b197d806e529300bcd84
+  sha256: fe106a9fff188a5ffae3cb986b6579b93f6a107b95f63e656f8a5caf88e31c7a
 
 build:
   number: 0
@@ -38,7 +38,7 @@ test:
     - geoglows
 
 about:
-  home: https://github.com/BYU-Hydroinformatics/geoglows
+  home: https://github.com/geoglows/pygeoglows
   summary: A tool for retrieving modeled river discharge from the GEOGLOWS data service
   license: BSD-3-Clause
   license_family: BSD
