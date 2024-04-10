@@ -1,5 +1,5 @@
 {% set name = "geoglows" %}
-{% set version = "1.0.2" %}
+{% set version = "1.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fe106a9fff188a5ffae3cb986b6579b93f6a107b95f63e656f8a5caf88e31c7a
+  sha256: 31237cbb219147a59470ff5f700dc8b69dc79d51c05001b70f5c3c64a5d76a58
 
 build:
   number: 0
@@ -16,22 +16,22 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
-    - requests
-    - pandas
-    - plotly >=5
-    - scipy
-    - numpy
-    - hydrostats
-    - HydroErr
-    - s3fs
-    - xarray
-    - zarr
+    - python >=3.7
+    - dask>=2024
     - fastparquet
-    - dask
+    - HydroErr
+    - hydrostats
+    - numpy>=1
+    - pandas>=1
+    - plotly>=5
+    - requests
+    - scipy
+    - s3fs>=2024
+    - xarray>=2024
+    - zarr
 
 test:
   imports:
