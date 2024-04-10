@@ -20,17 +20,17 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - dask>=2024
+    - dask >=2024
     - fastparquet
     - HydroErr
     - hydrostats
-    - numpy>=1
-    - pandas>=1
-    - plotly>=5
+    - numpy >=1
+    - pandas >=1
+    - plotly >=5
     - requests
     - scipy
-    - s3fs>=2024
-    - xarray>=2024
+    - s3fs >=2024
+    - xarray >=2024
     - zarr
 
 test:
