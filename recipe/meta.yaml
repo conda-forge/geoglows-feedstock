@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 48569b4c9074cde44fd4ef8fa845f824e0a33e51bd7bede4d6b919e18714815d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - dask >=2024
     - fastparquet
     - HydroErr
@@ -34,6 +34,8 @@ requirements:
     - zarr
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - geoglows
 
