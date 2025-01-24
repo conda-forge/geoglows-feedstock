@@ -1,5 +1,6 @@
 {% set name = "geoglows" %}
-{% set version = "1.7.0" %}
+{% set version = "1.7.1" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 48569b4c9074cde44fd4ef8fa845f824e0a33e51bd7bede4d6b919e18714815d
+  sha256: f5fd309fa071f38f5ee99f92d552176c00e1ff1fd1e24896297301bd5219f4a2
 
 build:
   number: 0
@@ -31,7 +32,7 @@ requirements:
     - scipy
     - s3fs >=2024
     - xarray >=2024
-    - zarr
+    - zarr ==2.18.4
 
 test:
   requires:
