@@ -1,5 +1,5 @@
 {% set name = "geoglows" %}
-{% set version = "2.1.0" %}
+{% set version = "2.2.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -32,8 +32,8 @@ requirements:
     - requests
     - scipy
     - s3fs >=2024
-    - xarray >=2024
-    - zarr ==2.18.4
+    - xarray >=2025
+    - zarr >=2.18,<4
 
 test:
   requires:
@@ -53,3 +53,4 @@ extra:
   recipe-maintainers:
     - rileyhales
     - msouff
+    - rhuber6
